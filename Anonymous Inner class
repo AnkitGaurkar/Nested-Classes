@@ -1,0 +1,26 @@
+/*Anonymous Inner Class:-
+ * A class that has no name its knows as Anonymous inner class & Interface.
+ * & we can create single object of Anonymous inner class & interface.
+ * 
+ */
+
+package com;
+abstract class Person
+{
+	abstract void print();
+}
+public class Demo2 {
+	public static void main (String[]args)
+	{
+	
+		Person p=new Person()
+		{
+			@Override
+			void print() {
+				System.out.println("Hello Bhava..!");
+			}
+		};
+		p.print();
+		
+	}
+}
