@@ -1,0 +1,29 @@
+/* Nested Interface :-
+ * An Interface within Interface is called Nested Interface..
+ * 
+ */
+package com;
+
+interface Inf
+{
+	void print();
+	interface Inf2
+	{
+		void disp();
+	}
+}
+  class Demo2 implements Inf.Inf2 {
+	
+	public void disp() {
+		// TODO Auto-generated method stub
+		System.out.println("Hello ");
+	}
+	public static void main (String[]args)
+	{
+	Inf.Inf2 itf=new  Demo2();
+	{
+		itf.disp();
+		
+	};
+	}
+}
