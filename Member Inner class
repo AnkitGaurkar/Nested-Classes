@@ -1,0 +1,27 @@
+/* Member Inner Class:-
+ * A non-static class that is created inside a class but outside method is called member Inner class.
+ * it can declared with private, protected, public, default access specifier.
+ * 
+ * 
+ */
+
+package com;
+
+public class Demo2 {
+	private int a=123;
+	
+	class Demo5 
+	{
+		void print()
+		{
+			System.out.println(a);
+		}
+	}
+	public static void main (String[]args)
+	{
+	
+		Demo2 d2=new Demo2();
+		Demo2.Demo5 d5=d2. new Demo5();
+			d5.print();
+	}
+}
