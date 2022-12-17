@@ -1,0 +1,29 @@
+/*Local Inner Class:-
+ * A class is created inside a method is called local inner class.
+ * its cannot associate with access specifier. 
+ */
+
+package com;
+public class Demo2 {
+	
+	private int data=10;
+	void print()
+	{
+		class Demo
+		{
+		void disp()
+		{
+			System.out.println(data);
+		}
+		}
+		Demo d1=new Demo();
+		d1.disp();
+	}
+	public static void main (String[]args)
+	{
+	
+		Demo2 d2=new Demo2();
+		d2.print();
+		
+	}
+}
